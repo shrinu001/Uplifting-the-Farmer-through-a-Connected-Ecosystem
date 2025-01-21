@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Uplifting Farmers through Connected Ecosystem - Add Land Rental</title>
+<style>
+body {
+  font-family: sans-serif;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-image: url(Home\ pg.jpg); /* Light background */
+}
+
+header {
+  background-color: #0056b3;
+  color: #fff;
+  padding: 1rem 0;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2rem;
+  margin: 0;
+  font-weight: 300; /* Slightly lighter font weight for a softer feel */
+}
+
+h2 { /* Style for form title */
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #003d82;
+}
+
+form {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="date"],
+select,
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #0056b3;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+button:hover {
+  background-color: #003d82;
+}
+</style>
+</head>
+<body>
+<header>
+  <h1>Uplifting Farmers through Connected Ecosystem</h1>
+</header>
+
+<main>
+  <form id="addLandRentalForm">
+    <h2>Add Land Rental Agreement</h2>
+    <div class="form-group">
+      <label for="landowner">Landowner Name:</label>
+      <input type="text" id="landowner" name="landowner" required>
+    </div>
+
+    <div class="form-group">
+      <label for="tenant">Tenant Name:</label>
+      <input type="text" id="tenant" name="tenant">
+    </div>
+
+    <div class="form-group">
+      <label for="address">Address:</label>
+      <textarea id="address" name="address" rows="3" required></textarea>
+    </div>
+
+    <div class="form-group">
+      <label for="size">Land Size (in acres):</label>
+      <input type="number" id="size" name="size" step="0.01" required>
+    </div>
+
+    <div class="form-group">
+      <label for="rentalRate">Rental Rate per acre:</label>
+      <input type="number" id="rentalRate" name="rentalRate" step="0.01" required>
+    </div>
+
+    <div class="form-group">
+      <label for="startDate">Start Date:</label>
+      <input type="date" id="startDate" name="startDate" required>
+    </div>
+
+    <div class="form-group">
+      <label for="endDate">End Date:</label>
+      <input type="date" id="endDate" name="endDate">
+    </div>
+
+    <div class="form-group">
+      <button type="submit">Submit</button>
+    </div>
+  </form>
+</main>
+<script>
+  // Add JavaScript for form submission (e.g., using AJAX) here.
+</script>
+</body>
+</html>

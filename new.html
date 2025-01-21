@@ -1,0 +1,62 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Fertilizer and Land Rental</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+ <!-- View Fertilizer Form -->
+    <div class="form-container" id="fertilizerForm">
+        <h2>View Fertilizer</h2>
+        <div class="form-group">
+            <label for="fertilizerName">Fertilizer Name:</label>
+            <input type="text" id="fertilizerName" name="fertilizerName" readonly value="Urea">
+        </div>
+        <div class="form-group">
+            <label for="fertilizerType">Type:</label>
+            <input type="text" id="fertilizerType" name="fertilizerType" readonly value="Nitrogen Fertilizer">
+        </div>
+        <div class="form-group">
+            <label for="quantityAvailable">Quantity Available:</label>
+            <input type="text" id="quantityAvailable" name="quantityAvailable" readonly value="500 kg">
+        </div>
+        <div class="form-group">
+            <label for="pricePerUnit">Price per Unit:</label>
+            <input type="text" id="pricePerUnit" name="pricePerUnit" readonly value="$10 per kg">
+        </div>
+        <button onclick="editFertilizer()">Edit</button>
+    </div>
+
+
+ 
+•	View Land Rental
+
+   <!-- View Land Rental Form -->
+    <div class="form-container" id="landRentalForm">
+        <h2>View Land Rental</h2>
+        <div class="form-group">
+            <label for="landLocation">Land Location:</label>
+            <input type="text" id="landLocation" name="landLocation" readonly value="Green Valley, Plot 23">
+        </div>
+        <div class="form-group">
+            <label for="landSize">Size (in acres):</label>
+            <input type="text" id="landSize" name="landSize" readonly value="50 acres">
+        </div>
+        <div class="form-group">
+            <label for="rentalPrice">Rental Price:</label>
+            <input type="text" id="rentalPrice" name="rentalPrice" readonly value="$1,500 per month">
+        </div>
+        <div class="form-group">
+            <label for="landOwner">Owner:</label>
+            <input type="text" id="landOwner" name="landOwner" readonly value="John Doe">
+        </div>
+        <button onclick="editLandRental()">Edit</button>
+    </div>
+
+    <script src="scripts.js"></script>
+
+</body>
+</html>
+

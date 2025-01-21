@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        background-image: url(Home\ pg.jpg);
+    }
+    #cropInfoForm {
+  max-width: 500px; /* Adjust as needed */
+  margin: 90px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="tel"],
+select,
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #0056b3;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #003d82;
+}
+
+</style>
+<body>
+ 
+<form id="cropInfoForm">
+  <div class="form-group">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
+  </div>
+
+  <div class="form-group">
+    <label for="owner">Owner:</label>
+    <input type="text" id="owner" name="owner" required>
+  </div>
+
+  <div class="form-group">
+    <label for="quality">Quality:</label>
+    <select id="quality" name="quality">
+      <option value="">Select Quality</option>
+      <option value="excellent">Excellent</option>
+      <option value="good">Good</option>
+      <option value="fair">Fair</option>
+      <option value="poor">Poor</option>
+    </select>
+  </div>
+
+  <div class="form-group">
+    <label for="address">Address:</label>
+    <textarea id="address" name="address" rows="3" required></textarea>
+  </div>
+
+  <div class="form-group">
+    <label for="mobile">Mobile Number:</label>
+    <input type="tel" id="mobile" name="mobile" pattern="[0-9]{10,15}" required>
+  </div>
+
+  <div class="form-group">
+    <button type="submit">Save</button>
+    
+</form>
+
+<script>
+function deleteEntry() {
+  // Add your delete logic here.  This could involve:
+  // 1. Confirmation dialog (using `confirm()`)
+  // 2. Removing the entry from a database (backend operation)
+  // 3. Updating the UI (removing the entry from the display)
+
+  // For a simple example (only removing visually):
+  document.getElementById("cropInfoForm").reset();
+  alert("Entry deleted (visually).  Implement database deletion as needed.");
+}
+</script>
+
+</body>
+</html>

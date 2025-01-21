@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.css" rel="stylesheet">
+    <style>
+        body {
+            background-image: url('Home pg.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            background: rgba(0, 0, 0, 0.7);
+            border-radius: 10px;
+            padding: 30px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+            width: 300px; /* Increased max-width */
+        }
+        .form-label {
+            color: #fff !important;
+            margin-bottom: 0.5rem; /* Adjusted spacing */
+        }
+        .mb-3 {
+            margin-bottom: 1.5rem; /* Adjusted spacing */
+        }
+        .btn-primary {
+            background-color: #007bff;
+            border: none;
+        }
+        .btn-primary:hover {
+            background-color: #0056b3;
+        }
+        .form-group {
+            display: flex;
+            flex-direction: column;
+        }
+    </style>
+</head>
+<body data-aos="fade">
+    <div class="container" data-aos="zoom-in">
+        <h2 class="text-center">Login</h2>
+        <form id="loginForm" novalidate>
+            <div class="mb-3 form-group">
+                <label for="username" class="form-label">User Name</label>
+                <input type="text" class="form-control" id="username" required>
+            </div>
+            <div class="mb-3 form-group">
+                <label for="newPass" class="form-label">Password</label>
+                <input type="password" class="form-control" id="newPass" required
+                       pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[!@#$%^&*+`~=?|<>/]).{8,}">
+            </div>
+            <button type="submit" class="btn btn-primary w-100">Login</button>
+        </form>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+        AOS.init();
+
+        (function() {
+            'use strict';
+            const form = document.getElementById('loginForm');
+            form.addEventListener('submit', function(event) {
+                const username = document.getElementById('username');
+                const password = document.getElementById('newPass');
+
+                if (!username.value.trim()) {
+                    event.preventDefault();
+                    alert("Please enter your username.");
+                    username.focus();
+                    return;
+                }
+
+                if (!password.value.trim()) {
+                    event.preventDefault();
+                    alert("Please enter your password.");
+                    password.focus();
+                    return;
+                }
+
+            
+                
+            });
+        })();
+    </script>
+</body>
+</html>

@@ -1,0 +1,65 @@
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif; /* Make sure you include Poppins font */
+}
+
+.background-image {
+    background-image: url('Home\ pg.jpg'); /* Replace with your image */
+    background-size: cover;
+    background-position: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Place behind other content */
+}
+
+.container {
+    text-align: center;
+    padding: 50px;
+    position: relative; /* Needed for positioning navigation */
+}
+
+.title {
+    font-size: 3em;
+    font-weight: bold;
+    color: white; /* Or a suitable color for contrast */
+    margin-bottom: 30px;
+}
+
+.navigation {
+    display: flex;
+    justify-content: flex-end; /* Align to the right */
+    gap: 20px; /* Space between navigation items */
+}
+
+.nav-link {
+    text-decoration: underline;
+    color: white; /* Or a suitable color */
+    font-weight: bold;
+}
+
+.nav-link:hover {
+    text-decoration: none; /* Remove underline on hover */
+    color: #FFD700; /* Change color on hover */
+}
+
+/* ... (previous styles remain the same) ... */
+
+.welcome-text {
+    color: white;
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 30px; /* Space between text and image */
+    font-weight: bold;
+}
+
+.welcome-image {
+    display: block; /* Makes the image behave like a block element */
+    margin-left: auto;
+    margin-right: auto; /* Centers the image */
+    width: 420px; /* Prevents the image from being too wide */
+    height: px; /* Maintains aspect ratio */
+}
+

@@ -1,0 +1,64 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Machinery Details</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+    <header class="bg-gradient-to-r from-blue-800 to-blue-500 text-white text-center py-6">
+        <h1 class="text-2xl md:text-4xl font-bold">Uplifting the Farmer Through Connected Ecosystems</h1>
+    </header>
+    <nav class="bg-blue-900 text-white">
+        <ul class="flex justify-center space-x-4 py-2">
+            <li><a href="#" class="hover:underline">ADD CROP SALE</a></li>
+            <li><a href="#" class="hover:underline">ADD LAND RENTAL</a></li>
+            <li><a href="#" class="hover:underline">VIEW FERTILIZER</a></li>
+            <li><a href="#" class="hover:underline">VIEW LAND RENTAL</a></li>
+            <li><a href="#" class="hover:underline">LOGOUT</a></li>
+        </ul>
+    </nav>
+    <main class="max-w-4xl mx-auto p-6 bg-white mt-6 shadow-md">
+        <h2 class="text-xl font-bold mb-4">Add Your Machinery Details</h2>
+        <form class="space-y-4">
+            <div>
+                <label for="name" class="block text-gray-700">Name</label>
+                <input type="text" id="name" class="w-full border border-gray-300 p-2 rounded">
+            </div>
+            <div>
+                <label for="lease" class="block text-gray-700">Lease Amount/hr</label>
+                <input type="text" id="lease" class="w-full border border-gray-300 p-2 rounded">
+            </div>
+            <div>
+                <label for="driver" class="block text-gray-700">Is Having Driver?</label>
+                <input type="text" id="driver" class="w-full border border-gray-300 p-2 rounded">
+            </div>
+            <div>
+                <label for="address" class="block text-gray-700">Address</label>
+                <input type="text" id="address" class="w-full border border-gray-300 p-2 rounded">
+            </div>
+            <div>
+                <label for="mobile" class="block text-gray-700">Mobile Number</label>
+                <input type="text" id="mobile" class="w-full border border-gray-300 p-2 rounded">
+            </div>
+            <button type="submit" class="bg-blue-900 text-white px-4 py-2 rounded">Add</button>
+        </form>
+        <aside class="mt-6">
+            <ul class="space-y-2 text-blue-600">
+                <li><a href="#" class="hover:underline"><i class="fas fa-pencil-alt"></i> View Loans</a></li>
+                <li><a href="#" class="hover:underline"><i class="fas fa-pencil-alt"></i> Add Machinery</a></li>
+                <li><a href="#" class="hover:underline"><i class="fas fa-pencil-alt"></i> View Machinery</a></li>
+                <li><a href="#" class="hover:underline"><i class="fas fa-pencil-alt"></i> View Market</a></li>
+                <li><a href="#" class="hover:underline"><i class="fas fa-pencil-alt"></i> View Cropsale</a></li>
+            </ul>
+        </aside>
+    </main>
+</body>
+</html>
